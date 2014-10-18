@@ -15,6 +15,7 @@ create table jumpBoard(
 	foreign key(jump_id) references jump(jump_id)
 )
 
+
 create table jumpImage(
 	board_num number not null,
 	image_date date default sysdate,
