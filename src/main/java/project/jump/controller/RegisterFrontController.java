@@ -7,12 +7,12 @@ import project.jump.member.MemberDAOImpl;
 
 
 @Controller
-public class MemberFrontController {
+public class RegisterFrontController {
 	
-	@RequestMapping(value="member.member", method = RequestMethod.GET)
-	public String member(){
-		MemberDAOImpl dao = new MemberDAOImpl();
-		System.out.println("test MemberFrontController member()");
-		return "login";
+
+	@RequestMapping(value="/register.do", method= RequestMethod.GET)
+	public String register(){
+		
+		return "register";
 	}
 }

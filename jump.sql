@@ -4,6 +4,8 @@ create table jump(
 	jump_name varchar2(32) not null,
 	jump_phone varchar2(11) not null
 )
+insert into jump values('dlacjfgus','1234','임철현','01077777777')
+select * from jump
 
 create sequence board_num;
 

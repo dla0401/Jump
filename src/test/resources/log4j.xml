@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="project.jump.dao">
+	<logger name="project.jump.controller">
 		<level value="info" />
 	</logger>
 	

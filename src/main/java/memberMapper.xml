@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="memberMapper">
+	<resultMap id="resultDTO" type="project.jump.dto.JumpDTO">
+    	<result property="jumpID" column="jump_id"/>
+    	<result property="jumpPwd" column="jump_pwd"/>
+    	<result property="jumpName" column="jump_name"/>
+    	<result property="jumpPhone" column="jump_phone"/>
+    	<!-- <collection property="comments" 
+    	column="BOARDID"
+    	 javaType="java.util.ArrayList" 
+    	 ofType="net.krespo.mybatis.Comment" 
+    	 select="getCommentListById"/> -->
+ 	</resultMap>
+	<select id="selectMember"  resultMap="resultDTO">
+  	select * from jump
+ 	</select> 
+</mapper>

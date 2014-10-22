@@ -1,0 +1,110 @@
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* social links */
+footer .social-links {
+   margin: 0 auto;
+   padding: 0;
+   font-size: 50px; /*이모티콘 크기*/
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0px px 0px 40px;
+    padding: 0;
+    margin-left: 10px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child { margin-left: 0px; }
+
+
+mainHeader { 
+   width: 100%;
+   height: 288px;  
+   background: #fff;    
+}
+
+/* For high-res devices */
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+	mainHeader .mainHeader-content {
+		background: #fff url(img/mainHeader-content-bg_@2X.png) no-repeat right top;
+		background-size: 361px 256px;
+	}
+
+}
+
+/* mainHeader logo */
+mainHeader h1#logo-text { 
+	margin: 0; 
+	padding: 0; 
+
+	/* change the values of top and left to adjust the position of the logo text */
+	position: absolute;
+	top: 40px; left: 40px;	
+}
+mainHeader h1#logo-text a {	 
+	margin: 0; 
+	padding: ;
+	font: normal 100px Georgia, Serif;
+	letter-spacing: -5px;
+	color: #fff;
+	text-decoration: none;
+}
+mainHeader p#intro {	
+	margin: 20px; 
+	padding: 0;
+	font: 20px/24px 'opensans-light', Georgia, Serif;
+	font-weight: normal;	
+	color: #a5a5a5;
+	width: 400px;
+	
+	/* change the values of top and left to adjust the position */
+	position: absolute;
+	top: 120px; left: 38px;		
+}
+
+#sidebar {
+	padding-top: 0px;
+	padding-left: 0px; /*검색창 패딩*/
+    float:right ;
+}
+
+
+
+/* search  포지션*/
+#sidebar .widget_search { 
+	padding-top: 30px;  /*검색창 top*/
+	margin-bottom: 36px;
+}
+#sidebar .widget_search h3 { display: none; }
+#sidebar .widget_search form {
+   position: relative; 
+    margin: 0px;
+}
+#sidebar .widget_search .text-search {
+	padding-right: 60px;
+	border:none;
+   width: 100%;
+   min-width: 150px;
+   border-radius: 3px;
+}
+#sidebar .widget_search .submit-search {
+	background:url(/images/search-icon.png) no-repeat; /*아이콘 이미지*/
+	box-shadow: none;
+	border:none;
+	cursor:pointer;
+	width: 18px;
+	height: 18px;
+	min-height: 18px;
+   margin: -9px 0 0 0;
+   padding: 0;
+   position: absolute;
+   top: 50%;
+   right: 18px;     
+}
+
+

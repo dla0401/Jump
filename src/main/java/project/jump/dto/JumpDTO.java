@@ -2,6 +2,9 @@ package project.jump.dto;
 
 public class JumpDTO {
 	private String jumpID;
+	private String jumpPwd;
+	private String jumpName;
+	private String jumpPhone;
 	public String getJumpID() {
 		return jumpID;
 	}
@@ -26,7 +29,4 @@ public class JumpDTO {
 	public void setJumpPhone(String jumpPhone) {
 		this.jumpPhone = jumpPhone;
 	}
-	private String jumpPwd;
-	private String jumpName;
-	private String jumpPhone;
 }
